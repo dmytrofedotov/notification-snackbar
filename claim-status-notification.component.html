@@ -1,0 +1,14 @@
+<div mat-dialog-content class="dialog-container">
+  <div class="dialog-icon-container info" [ngClass]="typeClass">
+    <mat-icon class="dialog-icon info" [ngClass]="typeClass">{{
+      typeIcon
+    }}</mat-icon>
+  </div>
+  <h2 class="dialog-title">Claim alert</h2>
+  <div [innerHTML]="data.Type" class="dialog-content"></div>
+  <ng-content></ng-content>
+  <!--  <div class="dialog-actions-container gap-3 px-4">-->
+  <!--    <button mat-flat-button class="dialog-action" [ngClass]="getButtonColor(button)" *ngFor="let button of buttons"-->
+  <!--      (click)="onDialogClose(button)" (window:keydown.enter)="onEnter(button)">{{button.caption}}</button>-->
+  <!--  </div>-->
+</div>
